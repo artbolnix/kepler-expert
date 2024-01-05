@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Kepler</title>
+        <link rel="stylesheet" href="css/style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/a7f62c80fb.js" crossorigin="anonymous"></script>
+        
+        <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/jquery.maskedinput@1.4.1/src/jquery.maskedinput.min.js" type="text/javascript"></script>
+    </head>
+    <body class="body" id="body">
+        <section class="header" id="header">
+            <div class="container">
+                <div class="header__body">
+                    <div class="header__img1">
+                        <img src="img/logo.svg" alt="">
+                    </div>
+                    <nav class="header__menu">
+                        <ul class="header__list">
+                            <li><a href="#about" class="anchor-link">О нас</a></li>
+                            <li><a href="#types" class="anchor-link">Виды спецтехники</a></li>
+                            <li><div class="header__img2"><img src="img/logo.svg" alt=""></div></li>
+                            <li><a href="#why" class="anchor-link">Почему именно мы?</a></li>
+                            <li><a href="#contacts" class="anchor-link">Контакты</a></li>
+                        </ul>
+                    </nav>
+                    <div class="header__burger">
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="slider">
+            <div class="container">
+                <div class="slider__body">
+                    <div class="slider__text">
+                        <p class="slider__title title">Ремонт спецтехники</p>
+                        <p class="slider__subtitle subtitle">
+                            Расточные-наплавочные работы по восстановлению отверстий, ремонт и замена агрегатных частей и т.д.
+                        </p>
+                    </div>
+                    <div class="slider__card">
+                        <div class="slider__card-body">
+                            <div class="slider__card-text">
+                                <p class="slider__card-title title">Запись на консультацию</p>
+                                <p class="slider__card-subtitle subtitle">Оставьте контактные данные и наш специалист свяжется с Вами:</p>
+                            </div>
+                            <form class="slider__card-form" method="post" action="/send.php">
+                                <input name="name" type="text" placeholder="Ваше имя" required>
+                                <input name="phone" id="phone" type="tel" placeholder="Номер телефона" required>
+                                <select name="type" id="order-select">
+                                    <option value="Дорожно-строительная техника">Дорожно-строительная техника</option>
+                                    <option value="Подъемные машины">Подъемные машины</option>
+                                    <option value="Коммунальная спецтехника">Коммунальная спецтехника</option>
+                                    <option value="Лесозаготовительное оборудование">Лесозаготовительное оборудование</option>
+                                    <option value="Сельхозтехника">Сельхозтехника</option>
+                                    <option value="Карьерная спецтехника">Карьерная спецтехника</option>
+                                </select>
+                                <input name="model" id="model" type="text" placeholder="Введите модель спецтехники" required>
+	                            <input type="hidden" name="act" value="order" required>
+                                <div class="slider__card-btn">
+                                    <button type="submit">Оставить заявку</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="about" class="container about">
+            <p class="about__title title">
+                О нас
+            </p>
+            <div class="about__text">
+                <p class="about__text-title title">Наша компания – команда профессионалов по ремонту и обслуживанию спецтехники.</p>
+                <p class="about__text-subtitle subtitle">
+                    Наша компания по ремонту спецтехники — это команда профессионалов с богатым опытом в сфере технического обслуживания и восстановления различных видов специализированной техники. Мы осуществляем ремонт и техническое обслуживание различных видов спецтехники, предоставляя нашим клиентам надежные решения для поддержания техники в идеальном состоянии.
+                </p>
+                <div class="about__text-info">
+                    <span></span>
+                    <p>
+                        Наш подход к ремонту спецтехники базируется на высокой квалификации наших специалистов и использовании современного оборудования. Мы понимаем, что каждая единица техники уникальна, поэтому наша работа начинается с тщательной диагностики, чтобы выявить все неисправности и предложить наилучшие методы их устранения.
+                    </p>
+                </div>
+                <p class="about__text-main subtitle">
+                    Сотрудничество с нами — это не просто ремонт, это индивидуальный подход к каждому клиенту. Мы ценим Ваше время и ресурсы, поэтому стремимся выполнять работы оперативно, сохраняя при этом высокий стандарт качества. Наша миссия — обеспечить надежность и долговечность Вашей спецтехники.
+                </p>
+                <p class="about__text-main subtitle">
+                    Наша компания гордится своей репутацией надежного и ответственного партнера в области ремонта спецтехники. Мы знаем, насколько важно для Вас иметь технику в отличном состоянии, поэтому мы стремимся быть лучшими в своей области.
+                </p>
+            </div>
+            <div class="about__steps">
+                <p class="about__step1">
+                    Первым шагом в ремонте спецтехники является тщательная диагностика, используя современные технологии и многолетний опыт наших мастеров. Специалисты проводят комплексное обследование, выявляя неисправности.     
+                </p>
+                <div class="about__steps-arrow">
+
+                </div>
+                <p class="about__step2">
+                    После выявления проблемных участков, профессионалы приступают к разборке машины. Старые и поврежденные детали заменяются на новые, соответствующие стандартам производителя. Важно следить за качеством запасных частей.
+                </p>
+                <div class="about__steps-arrow">
+
+                </div>    
+                <p class="about__step3">
+                    Завершающий этап - тестирование всех систем и оптимизация работы спецтехники. После успешных испытаний спецтехника готова к возвращению в эксплуатацию.
+                </p>
+            </div>
+        </section>
+        <section id="types" class="container service">
+            <p class="service__title title">
+                Виды спецтехники
+            </p>
+            <div class="service__cards">
+                <div class="card__body">
+                    <div class="card__content">
+                        <div class="card__img">
+                            <img src="img/card1.png" alt="">
+                        </div>
+                        <div class="card__text">
+                            <p class="card__title title">Дорожно-строительная техника</p>
+                            <p class="card__subtitle subtitle">Экскаваторы, бетономиксеры, бетононасосы, асфальтоукладчики.</p>
+                            <p class="card__price subtitle">Для получения точной информации о ценах и сроках работ, просим обратиться к нашему менеджеру, который с удовольствием предоставит всю необходимую информацию.</p>
+                        </div>
+                    </div>
+                    <div class="card__btn">
+                        <a href="#" class="type-tech" data-value="Дорожно-строительная техника">Оставить заявку</a>
+                    </div>
+                </div>
+                <div class="card__body">
+                    <div class="card__content">
+                        <div class="card__img">
+                            <img src="img/card2.jpg" alt="">
+                        </div>
+                        <div class="card__text">
+                            <p class="card__title title">Подъемные машины</p>
+                            <p class="card__subtitle subtitle">Автокраны, краны-манипуляторы, погрузчики.</p>
+                            <p class="card__price subtitle">Для получения точной информации о ценах и сроках работ, просим обратиться к нашему менеджеру, который с удовольствием предоставит всю необходимую информацию.</p>
+                        </div>
+                    </div>
+                    <div class="card__btn">
+                        <a href="#" class="type-tech" data-value="Подъемные машины">Оставить заявку</a>
+                    </div>
+                </div>
+                <div class="card__body">
+                    <div class="card__content">
+                        <div class="card__img">
+                            <img src="img/card3.png" alt="">
+                        </div>
+                        <div class="card__text">
+                            <p class="card__title title">Коммунальная спецтехника</p>
+                            <p class="card__subtitle subtitle">Мусоровозы, снегоуборочные, поливочные машины.</p>
+                            <p class="card__price subtitle">Для получения точной информации о ценах и сроках работ, просим обратиться к нашему менеджеру, который с удовольствием предоставит всю необходимую информацию.</p>
+                        </div>
+                    </div>
+                    <div class="card__btn">
+                        <a href="#" class="type-tech" data-value="Коммунальная спецтехника">Оставить заявку</a>
+                    </div>
+                </div>
+            </div>
+            <div class="service__cards">
+                <div class="card__body">
+                    <div class="card__content">
+                        <div class="card__img">
+                            <img src="img/card4.png" alt="">
+                        </div>
+                        <div class="card__text">
+                            <p class="card__title title">Лесозаготовительное оборудование</p>
+                            <p class="card__subtitle subtitle">Мульчеры, самосвалы, форвадеры.</p>
+                            <p class="card__price subtitle">Для получения точной информации о ценах и сроках работ, просим обратиться к нашему менеджеру, который с удовольствием предоставит всю необходимую информацию.</p>
+                        </div>
+                    </div>
+                    <div class="card__btn">
+                        <a href="#" class="type-tech" data-value="Лесозаготовительное оборудование">Оставить заявку</a>
+                    </div>
+                </div>
+                <div class="card__body">
+                    <div class="card__content">
+                        <div class="card__img">
+                            <img src="img/card5.png" alt="">
+                        </div>
+                        <div class="card__text">
+                            <p class="card__title title">Сельхозтехника</p>
+                            <p class="card__subtitle subtitle">Тракторы, комбайны, косилки или другие виды техники.</p>
+                            <p class="card__price subtitle">Для получения точной информации о ценах и сроках работ, просим обратиться к нашему менеджеру, который с удовольствием предоставит всю необходимую информацию.</p>
+                        </div>
+                    </div>
+                    <div class="card__btn">
+                        <a href="#" class="type-tech" data-value="Сельхозтехника">Оставить заявку</a>
+                    </div>
+                </div>
+                <div class="card__body">
+                    <div class="card__content">
+                        <div class="card__img">
+                            <img src="img/card6.png" alt="">
+                        </div>
+                        <div class="card__text">
+                            <p class="card__title title">Карьерная спецтехника</p>
+                            <p class="card__subtitle subtitle">Самосвалы, экскаваторы, бульзозеры или другие виды техники.</p>
+                            <p class="card__price subtitle">Для получения точной информации о ценах и сроках работ, просим обратиться к нашему менеджеру, который с удовольствием предоставит всю необходимую информацию.</p>
+                        </div>
+                    </div>
+                    <div class="card__btn">
+                        <a href="#" class="type-tech" data-value="Карьерная спецтехника">Оставить заявку</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="why" class="container why">
+            <p class="why__title title">
+                Почему именно мы?
+            </p>
+            <div class="why__content">
+                <p class="why__content-title title">Качественный ремонт спецтехники</p>
+                <span></span>
+                <div class="why__text">
+                    <p class="why__text subtitle">
+                        Мы не просто ремонтируем технику — мы создаем долгосрочные отношения с нашими клиентами. Наша команда состоит из высококвалифицированных мастеров, способных решать самые сложные технические задачи. Мы постоянно обновляем наши навыки и следим за последними технологическими трендами, чтобы предоставлять Вам лучший сервис.
+                    </p>
+                    <p class="why__text subtitle">
+                        Наши клиенты выбирают нас из-за нашего индивидуального подхода и высокого стандарта качества. Мы не просто ремонтируем, мы улучшаем технику, устанавливаем современные компоненты и предлагаем передовые технологические решения. Мы гордимся тем, что помогаем нашим клиентам сэкономить время и ресурсы.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="container choice">
+            <div class="choice__body">
+                <div class="choice__content">
+                    <div class="choice__card">
+                        <?xml version="1.0" ?><svg data-name="Layer 1" id="Layer_1" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg"><defs><style>.cls-1{fill:#ffc700;}</style></defs><title/><path class="cls-1" d="M49,40.49a3.08,3.08,0,0,0-3.67-.42l-1-4.06,0-.09,0-.08a1,1,0,0,0-.2-.29h0l-1.41-1.41a3,3,0,0,0-4.25,0h0l-.71-.72L51,20.05a1,1,0,0,1,.9-.27,9.86,9.86,0,0,0,4.61-.11,10.11,10.11,0,0,0,7.13-7.13,9.82,9.82,0,0,0,.27-3.65h0a2,2,0,0,0-3.42-1.17l-2.78,2.84a1,1,0,0,1-1.42,0L53.49,7.73A1,1,0,0,1,53.2,7a1,1,0,0,1,.3-.72l2.79-2.84a2,2,0,0,0,.47-2.08A2,2,0,0,0,55.11.06,10,10,0,0,0,44.33,7.47a9.81,9.81,0,0,0-.11,4.6A1,1,0,0,1,44,13L30.59,26.34,14.23,10l-.52-2.64a3,3,0,0,0-.82-1.54L7.66.59a2,2,0,0,0-2.83,0L.59,4.83a2,2,0,0,0,0,2.83l5.22,5.23a3,3,0,0,0,1.54.82l2.64.52L26.34,30.59,13,44a1,1,0,0,1-.9.27,9.86,9.86,0,0,0-4.61.11A10.11,10.11,0,0,0,.33,51.46a9.82,9.82,0,0,0-.27,3.65,2,2,0,0,0,1.33,1.65,2,2,0,0,0,2.09-.48l2.78-2.84a1,1,0,0,1,1.42,0l2.83,2.83a1,1,0,0,1,.29.7,1,1,0,0,1-.3.72L7.71,60.53a2,2,0,0,0,1.18,3.41A10.32,10.32,0,0,0,10,64a10,10,0,0,0,9.67-7.47,9.81,9.81,0,0,0,.11-4.6A1,1,0,0,1,20,51L33.41,37.66l.72.71h0a3,3,0,0,0,0,4.25L35.54,44h0a1,1,0,0,0,.29.2l.08,0,.09,0,4.05,1A3,3,0,0,0,40.49,49L54.64,63.12a3,3,0,0,0,4.24,0l4.24-4.24a3,3,0,0,0,0-4.24ZM45.37,14.38a3,3,0,0,0,.81-2.73A7.9,7.9,0,0,1,46.26,8,8.07,8.07,0,0,1,52,2.27a7.57,7.57,0,0,1,2.91-.21L52.08,4.9a3,3,0,0,0,0,4.25L54.91,12a3,3,0,0,0,4.25,0L62,9.11h0A7.83,7.83,0,0,1,61.73,12a8.08,8.08,0,0,1-5.7,5.7,7.77,7.77,0,0,1-3.68.08,3,3,0,0,0-2.74.81L36.24,32,32,27.76ZM18.63,49.62a3,3,0,0,0-.81,2.73A7.9,7.9,0,0,1,17.74,56a8.07,8.07,0,0,1-5.7,5.7,7.57,7.57,0,0,1-2.91.21l2.79-2.85a3,3,0,0,0,0-4.24L9.09,52a3,3,0,0,0-4.25,0L2.05,54.88A7.83,7.83,0,0,1,2.27,52,8.08,8.08,0,0,1,8,46.26a7.9,7.9,0,0,1,3.68-.08,3,3,0,0,0,2.74-.81L27.76,32,32,36.24ZM40.49,35.25a1,1,0,0,1,.71.29l.71.71-5.66,5.66-.71-.71a1,1,0,0,1,0-1.41l4.25-4.25A1,1,0,0,1,40.49,35.25ZM6.24,2,8,3.77,3.77,8,2,6.24Zm1,9.47L4.47,8.72,8.72,4.47l2.75,2.76a1,1,0,0,1,.28.51l.48,2.42-2.07,2.07-2.42-.48A1,1,0,0,1,7.23,11.47Zm4.67,1.84,1.41-1.41L37,35.54,35.54,37Zm30.88,24.9.85,3.39-2,2-3.39-.85ZM61.71,57.46h0l-4.25,4.25a1,1,0,0,1-1.41,0L41.91,47.56a1,1,0,0,1-.29-.7,1,1,0,0,1,.29-.71l4.24-4.24a1,1,0,0,1,.71-.29,1,1,0,0,1,.7.29L61.71,56.05a1,1,0,0,1,.29.71A1,1,0,0,1,61.71,57.46Z"/><path class="cls-1" d="M44.38,46.5a.5.5,0,0,0-.7,0,.5.5,0,0,0,0,.71L56.4,59.94a.51.51,0,0,0,.36.15.49.49,0,0,0,.35-.15.5.5,0,0,0,0-.71Z"/><path class="cls-1" d="M45.8,45.09a.5.5,0,0,0-.71.71L57.82,58.52a.49.49,0,0,0,.35.15.47.47,0,0,0,.35-.15.48.48,0,0,0,0-.7Z"/><path class="cls-1" d="M47.21,43.68a.5.5,0,0,0-.71,0,.5.5,0,0,0,0,.7L59.23,57.11a.51.51,0,0,0,.36.15.5.5,0,0,0,.35-.15.51.51,0,0,0,0-.71Z"/></svg>
+                        <div class="choice__text">
+                            <span></span>
+                            <p class="choice__content-title title">Гарантии Партнерства:</p>
+                            <p class="choice__content-subtitle subtitle">
+                                Наша цель – не просто устранить технические недочеты, но и стать Вашим долгосрочным партнером в обеспечении бесперебойной работы Вашей спецтехники. Мы стремимся создать партнерские отношения, основанные на взаимном доверии и успехе Вашего бизнеса.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="choice__citat">
+                    <span></span>
+                    <p>
+                        Выбирая нашу компанию для ремонта спецтехники, Вы делаете выбор в пользу надежности, качества и профессионализма. Мы стремимся к долгосрочному сотрудничеству, где каждый клиент может быть уверен в том, что его техника находится в заботливых руках опытных специалистов. Доверьтесь нам, и Ваша спецтехника будет служить Вам надежно и эффективно, обеспечивая работу поставленных задач без сбоев.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section id="contacts" class="content footer">
+            <div class="footer__body">
+                <img src="img/logo.svg" alt="Логотип Kepler">
+                <ul class="footer__btn">
+                    <li><a href="#about" class="anchor-link">О нас</a></li>
+                    <li><a href="#types" class="anchor-link">Виды спецтехники</a></li>
+                    <li><a href="#why" class="anchor-link">Почему именно мы?</a></li>
+                    <li><a href="#contacts" class="anchor-link">Контакты</a></li>
+                </ul>
+                <div class="contacts">
+                    <p class="footer__social-title title">Контакты</p>
+                    <span></span>
+                    <ul class="footer__social">
+                        <li><a href="https://yandex.ru/maps/-/CDuQZCN9" target="_blank">Краснокаменная 42 к1,<br>Калининград</a></li>
+                        <li><a href="tel:+79212630440">+7 (921) 263-04-40</a></li>
+                        <li><a href="tel:+79218506000">+7 (921) 850-60-00</a></li>
+                        <li><a href="mailto:keplerpro@mail.ru">KEPLERpro@mail.ru</a></li>
+                    </ul>
+                    
+                    <div class="social">
+                        <a href="https://t.me/+79218506000" target="_blank">
+                            <img src="img/telegram.svg" alt="Ссылка на телеграм">
+                        </a>
+                        <a href="https://wa.me/79218506000" target="_blank">
+                            <img src="img/whatsapp.svg" alt="Ссылка на whatsapp">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <script>
+            let option = document.getElementById('order-select');
+            let link = document.addEventListener('click', link => {
+                if (link.target.getAttribute('class') == 'type-tech') {
+                    let type_tech = (link.target.getAttribute('data-value'));
+                    option.value = type_tech;
+                }
+            })
+        </script>
+        <script>
+            //Код jQuery, установливающий маску для ввода телефона элементу input
+            //1. После загрузки страницы,  когда все элементы будут доступны выполнить...
+            $(function(){
+              //2. Получить элемент, к которому необходимо добавить маску
+              $("#phone").mask("79999999999");
+            });
+        </script>
+        <script>
+            let anchor_link = document.addEventListener('click', anchor_link => {
+                if (anchor_link.target.getAttribute('class') == 'anchor-link') {
+                    let block_id = anchor_link.target.getAttribute('href');
+                    let block = document.getElementById(block_id.slice(1));
+                    
+                    let position = $(block_id).offset().top,
+                        height = $(block_id).height();
+                    $(document).on('scroll', function (){
+                      let scroll = $(document).scrollTop();
+                        console.log(position, scroll, (scroll + height));
+                        if(scroll < (position + height) ) {
+                            block.classList.add('padding-to-top');
+                        } else {
+                            block.classList.remove('padding-to-top');
+                        }
+                    })
+                    // block.classList.add('padding-to-top');
+                    // console.log(block);
+                }
+            })
+        </script>
+        <script src="js/script.js"></script>
+    </body>
+</html>
